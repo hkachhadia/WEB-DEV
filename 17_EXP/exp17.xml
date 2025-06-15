@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="exp17.css"?>
+<!DOCTYPE employees [
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (Emp_id,name,designation,salary,dateofjoin)>
+<!ELEMENT Emp_id (#PCDATA)>
+<!ELEMENT name (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT designation (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT dateofjoin (#PCDATA)>
+<!ATTLIST employee department CDATA #REQUIRED>
+]>
+<employees>
+    <employee department="CE">
+    <Emp_id>1</Emp_id>
+    <name>
+        <fname>Het</fname>
+        <lname>Kachhadia</lname>
+    </name>
+    <designation>student</designation>
+    <salary>70000000</salary>
+    <dateofjoin>29/9/2005</dateofjoin>
+</employee>
+
+    <employee department="IT">
+    <Emp_id>2</Emp_id>
+    <name>
+        <fname>Krish</fname>
+        <lname>Joshi</lname>
+    </name>
+    <designation>student</designation>
+    <salary>70000</salary>
+    <dateofjoin>20/10/2005</dateofjoin>
+</employee>
+
+    <employee department="CIVIL">
+    <Emp_id>3</Emp_id>
+    <name>
+        <fname>Param</fname>
+        <lname>Agara</lname>
+    </name>
+    <designation>student</designation>
+    <salary>7</salary>
+    <dateofjoin>29/9/2024</dateofjoin>
+</employee>
+
+    <employee department="CE">
+    <Emp_id>4</Emp_id>
+    <name>
+        <fname>Bhargavi</fname>
+        <lname>mam</lname>
+    </name>
+    <designation>faculty</designation>
+    <salary>70000000</salary>
+    <dateofjoin>N/A</dateofjoin>
+</employee>
+
+    <employee department="Ec">
+    <Emp_id>5</Emp_id>
+    <name>
+        <fname>Dhruvil</fname>
+        <lname>Dave</lname>
+    </name>
+    <designation>student</designation>
+    <salary>7</salary>
+    <dateofjoin>29/9/2005</dateofjoin>
+</employee>
+</employees>

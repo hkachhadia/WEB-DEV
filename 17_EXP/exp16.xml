@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LDRPITR SYSTEM "exp16.dtd">
+<LDRPITR>
+    <course id = "BE">
+    <CE3G>
+    <student>
+    <eno>23BECE30456</eno>
+    <name>
+        <fname>het</fname>
+        <lname>kachhadia</lname>
+    </name>
+    <email>het@gmail.com</email>
+    <semester>3rd</semester>
+    <result>
+        <spi>9.9</spi>
+        <cpi>10.0</cpi>
+    </result>
+    <phone>1234567890</phone>
+    <address>ahmedabad</address>
+</student>
+</CE3G>
+</course>
+</LDRPITR>
