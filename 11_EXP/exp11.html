@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>DATE</title>
+    </head>
+    <script>
+        let dateobj = new Date();
+        let day = String(dateobj.getDate()).padStart(2,'0');
+        let month = String(dateobj.getMonth() + 1 ).padStart(2,'0');
+        let year = String(dateobj.getFullYear());
+        let gday= String(dateobj.getDay()+1);
+        let hour= String(dateobj.getHours());
+        let min= String(dateobj.getMinutes());
+        let sec= String(dateobj.getSeconds());
+        let milisec= String(dateobj.getMilliseconds());
+        let output = "today's date is " + day + '/' + month + '/' + year;
+        let time = "today's time is " + hour + ':' + min + ':' + sec + ':' + milisec;
+
+        console.log(output); 
+        document.write(output+"\n");
+        // document.write(gday+"\n");
+        document.write(time);
+    </script>
+</html>
