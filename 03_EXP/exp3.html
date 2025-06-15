@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>feedback form</title>
+    </head>
+    <body style="background-color: rgb(2, 253, 236);"><center>
+        <h1>FEEDBACK FORM</h1>
+        <form id="f1" action="exp3(i).html">
+            <table>
+                <tr>
+                    <td><label for="name">Student name:</label></td>
+                    <td><input type="text" id="name" placeholder="Enter your name" required autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="enroll">Enrollment number:</label></td>
+                    <td><input type="password" id="enroll" placeholder="Enter your Enrollment no." required autofocus></td>
+                </tr>
+                <tr>
+                    <td><label>Email Id:</label></td>
+                    <td><input type="email" id="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="" required>
+                        <label for="female">Female</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department:</label></td>
+                    <td>    
+                    <select name="dept" multiple="multiple">
+                    <option value="CE">Computer Engineering</option>
+                    <option value="IT">Information technology</option>
+                    <option value="MECH">Mechanical Engineering</option>
+                    <option value="CIVIL">Civil Engineering</option>
+                    <option value="EC">Electronics Engineering</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sem">Semester:</label></td>
+                    <td>    
+                    <select name="sem">
+                    <option value="sem1" required>Semester 1</option>
+                    <option value="sem2" required>Semester 2</option>
+                    <option value="sem3" required>Semester 3</option>
+                    <option value="sem4" required>Semester 4</option>
+                    <option value="sem5" required>Semester 5</option>
+                    <option value="sem6" required>Semester 6</option>
+                    <option value="sem7" required>Semester 7</option>
+                    <option value="sem8" required>Semester 8</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="div">Division:</label></td>
+                    <td>
+                        <input type="radio" id="a" name="div"  required>
+                        <label for="a">A</label>
+                        <input type="radio" id="b" name="div" required>
+                        <label for="b">B</label>
+                        <input type="radio" id="c" name="div" required>
+                        <label for="c">C</label>
+                        <input type="radio" id="d" name="div" required>
+                        <label for="d">D</label>
+                        <input type="radio" id="e" name="div" required>
+                        <label for="e">E</label>
+                        <input type="radio" id="f" name="div" required>
+                        <label for="f">F</label>
+                        <input type="radio" id="g" name="div" required>
+                        <label for="g">G</label>
+                        <input type="radio" id="p" name="div" required>
+                        <label for="p">P</label>
+                        <input type="radio" id="q" name="div" required>
+                        <label for="q">Q</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Ratings:</label></td>
+                    <td>
+                        1)Teaching:
+                        <br>
+                        <input type="radio" name="t" required>1</input>
+                        <input type="radio" name="t" required>2</input>
+                        <input type="radio" name="t" required>3</input>
+                        <input type="radio" name="t" required>4</input>
+                        <input type="radio" name="t" required>5</input>
+                        <br>
+                        2)Methodology:
+                        <br>
+                        <input type="radio" name="m" required>1</input>
+                        <input type="radio" name="m" required>2</input>
+                        <input type="radio" name="m" required>3</input>
+                        <input type="radio" name="m" required>4</input>
+                        <input type="radio" name="m" required>5</input>
+                        <br>
+                        3)Laboratory:
+                        <br>
+                        <input type="radio" name="l" required>1</input>
+                        <input type="radio" name="l" required>2</input>
+                        <input type="radio" name="l" required>3</input>
+                        <input type="radio" name="l" required>4</input>
+                        <input type="radio" name="l" required>5</input>
+                        <br>
+                        4)Admin:
+                        <br>
+                        <input type="radio" name="a" required>1</input>
+                        <input type="radio" name="a" required>2</input>
+                        <input type="radio" name="a" required>3</input>
+                        <input type="radio" name="a" required>4</input>
+                        <input type="radio" name="a" required>5</input>
+                        <br>
+                        5)Hostel:
+                        <br>
+                        <input type="radio" name="h" required>1</input>
+                        <input type="radio" name="h" required>2</input>
+                        <input type="radio" name="h" required>3</input>
+                        <input type="radio" name="h" required>4</input>
+                        <input type="radio" name="h" required>5</input>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="feedback">Feedback:</label></td>
+                    <td>
+                        <textarea name="feedback" row="20" cols="50" placeholder="Enter your genuine feedback..." autofocus required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="b1" value="OK"></input></td>
+                </tr>
+                <tr>
+                    <td><label>Subjects:</label></td>
+                    <td>
+                        <input type="checkbox" name="dsa">DSA</input>
+                        <input type="checkbox" name="dbms">DBMS</input>
+                        <input type="checkbox" name="itw">ITW</input>
+                        <br>    
+                        <input type="checkbox" name="dm">DM</input>
+                        <input type="checkbox" name="fme">FME</input>
+                        <input type="checkbox" name="eg">EG</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center>
+                    <input type="submit">
+                    <input type="reset">
+                    </td>
+                </tr>
+
+            </table>     
+        </form>
+    </body>
+</html>
