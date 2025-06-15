@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODDEVEN</title>
+</head>
+
+<body><center>
+    <form>
+        <label>Enter the Number:</label>
+        <input type="text" id="num">
+        <input type="button" value="check" onclick="check()"><br>
+        <label>Number is</label>
+        <input type="text" id="res">
+    </form>
+    <script>
+        function check() {
+            let x = document.getElementById("num").value;
+            if (x % 2 == 0) {
+                return document.getElementById("res").value = "EVEN";
+            }
+            else {
+                return document.getElementById("res").value = "ODD";
+            }
+        }
+    </script>
+</body>
+
+</html>
