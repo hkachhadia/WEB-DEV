@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image rotation</title>
+    <style>
+        img {
+
+            height: 200px;
+            width: 200px;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="1.png" id="i1">
+        <img src="2.jpg" id="i2">
+        <img src="3.jpeg" id="i3">
+    </div>
+    <script>
+        var myImage1 = document.getElementById("i1");
+
+        var imageArray1 = ["4.jpeg", "5.jpeg", "6.jpg"];
+        var imageIndex1 = 0;
+
+
+        function changeImage1() {
+
+
+            myImage1.setAttribute("src", imageArray1[imageIndex1]);
+            imageIndex1++;
+            if (imageIndex1 >= imageArray1.length) {
+                imageIndex1 = 0;
+
+            }
+        }
+        setTimeout(changeImage1, 1000);
+        setInterval(changeImage1, 2000);
+
+
+        var myImage2 = document.getElementById("i2");
+        var imageArray2 = ["7.jpg", "8.jpg", "9.jpg"];
+        var imageIndex2 = 0;
+
+
+        function changeImage2() {
+
+
+            myImage2.setAttribute("src", imageArray2[imageIndex2]);
+            imageIndex2++;
+            if (imageIndex2 >= imageArray2.length) {
+                imageIndex2 = 0;
+
+            }
+        }
+        setTimeout(changeImage2, 1000);
+        setInterval(changeImage2, 2000);
+
+
+        var myImage3 = document.getElementById("i3");
+        var imageArray3 = ["10.jpeg", "11.HEIC", "12.jpg"];
+        var imageIndex3 = 0;
+
+
+        function changeImage3() {
+
+            myImage3.setAttribute("src", imageArray3[imageIndex3]);
+            imageIndex3++;
+            if (imageIndex3 >= imageArray3.length) {
+                imageIndex3 = 0;
+
+            }
+        }
+        setTimeout(changeImage3, 1000);
+        setInterval(changeImage3, 2000);
+
+    </script>
+</body>
+
+</html>
