@@ -1,0 +1,16 @@
+<!ELEMENT LDRPITR (course)>
+<!ELEMENT course (CE3G)>
+<!ELEMENT CE3G (student+)>
+<!ELEMENT student (eno,name,email,semester,result,phone,address)>
+<!ELEMENT eno (#PCDATA)>
+<!ELEMENT name (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT result (spi,cpi)>
+<!ELEMENT spi (#PCDATA)>
+<!ELEMENT cpi (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST course id CDATA #REQUIRED>
